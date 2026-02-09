@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio MIAGE — Projet final</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Portfolio MIAGE</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="travaux.html">Travaux</a>
+        <a href="cours.html">Cours</a>
+        <a class="active" href="projet.html">Projet final</a>
+        <a href="apropos.html">À propos</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="container mobile-nav" id="mobileNav" hidden>
+      <a href="travaux.html">Travaux</a>
+      <a href="cours.html">Supports de cours</a>
+      <a href="projet.html">Projet final (CRM)</a>
+      <a href="apropos.html">À propos / CV</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>🧾 Projet final — CRM</h1>
+    <p class="muted">Présentation, objectifs, fonctionnalités, captures et livrables.</p>
+
+    <section class="card">
+      <h2>Objectifs</h2>
+      <ul class="list">
+        <li>Centraliser les informations clients</li>
+        <li>Suivre les opportunités et ventes</li>
+        <li>Générer devis / factures</li>
+      </ul>
+    </section>
+
+    <section class="grid mt">
+      <article class="card">
+        <h2>Fonctionnalités</h2>
+        <ul class="list">
+          <li>Gestion contacts (clients / fournisseurs)</li>
+          <li>Pipeline CRM</li>
+          <li>Facturation et reporting</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Documentation</h2>
+        <ul class="list">
+          <li>Guide d’utilisation (PDF)</li>
+          <li>Cas d’usage + schémas (PDF)</li>
+          <li>Captures d’écran</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Diaporama soutenance</h2>
+        <p>Ajoute ici ton diaporama (PDF) ou un lien.</p>
+        <a class="btn btn-outline" href="#">Télécharger le diaporama (à ajouter)</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> [Ton Nom]</span>
+      <a class="link" href="index.html">Retour accueil</a>
+    </div>
+  </footer>
+</body>
+</html>

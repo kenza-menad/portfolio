@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio MIAGE — À propos</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Portfolio MIAGE</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="travaux.html">Travaux</a>
+        <a href="cours.html">Cours</a>
+        <a href="projet.html">Projet final</a>
+        <a class="active" href="apropos.html">À propos</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="container mobile-nav" id="mobileNav" hidden>
+      <a href="travaux.html">Travaux</a>
+      <a href="cours.html">Supports de cours</a>
+      <a href="projet.html">Projet final (CRM)</a>
+      <a href="apropos.html">À propos / CV</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>👤 À propos de moi</h1>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Présentation</h2>
+        <p>
+          Je suis étudiant(e) en MIAGE. Je m’intéresse à la gestion des systèmes d’information,
+          au développement web et aux outils métiers (ERP/CRM).
+        </p>
+        <ul class="list">
+          <li><strong>Ville :</strong> Paris</li>
+          <li><strong>Email :</strong> ton.email@exemple.com</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>CV & LinkedIn</h2>
+        <p>Ajoute ton CV ATS en PDF dans ton dossier et mets le lien ici.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#">Télécharger mon CV (à ajouter)</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/kenzamenad/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+       
+      </article>
+
+      <article class="card">
+        <h2>Compétences</h2>
+        <div class="badges">
+          <span class="badge">Git</span>
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">SQL</span>
+          <span class="badge">Odoo</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Kenza MENAD </span>
+      <a class="link" href="index.html">Retour accueil</a>
+    </div>
+  </footer>
+</body>
+</html>

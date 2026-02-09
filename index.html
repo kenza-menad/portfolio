@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio MIAGE — Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Portfolio MIAGE</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="travaux.html">Travaux</a>
+        <a href="cours.html">Cours</a>
+        <a href="projet.html">Projet final</a>
+        <a href="apropos.html">À propos</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="container mobile-nav" id="mobileNav" hidden>
+      <a href="travaux.html">Travaux</a>
+      <a href="cours.html">Supports de cours</a>
+      <a href="projet.html">Projet final (CRM)</a>
+      <a href="apropos.html">À propos / CV</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Bonjour Je suis <span class="accent">Kenza MENAD</span></h1>
+      <p>
+        Bienvenue sur mon portfolio numérique (MIAGE). Ici je centralise mes travaux, cours.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="projet.html">Voir le projet final</a>
+        <a class="btn btn-outline" href="travaux.html">Consulter mes travaux</a>
+      </div>
+      <div class="badges">
+        <span class="badge">HTML/CSS/JS</span>
+        <span class="badge">Git & GitHub</span>
+        <span class="badge">Odoo / CRM</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>📁 Travaux demandés</h2>
+        <p>TP, exercices et livrables organisés par thèmes.</p>
+        <a class="link" href="travaux.html">Ouvrir →</a>
+      </article>
+
+      <article class="card">
+        <h2>📚 Supports de cours</h2>
+        <p>Notes complétées et ressources de cours.</p>
+        <a class="link" href="cours.html">Ouvrir →</a>
+      </article>
+
+      <article class="card">
+        <h2>🧾 Projet final (CRM)</h2>
+        <p>Présentation, objectifs, captures et documentation.</p>
+        <a class="link" href="projet.html">Ouvrir →</a>
+      </article>
+
+      <article class="card">
+        <h2>👤 À propos</h2>
+        <p>CV (ATS), LinkedIn, compétences et contact.</p>
+        <a class="link" href="apropos.html">Ouvrir →</a>
+      </article>
+    </section>
+
+    <section class="card mt">
+      <h2>✅ Checklist (ce que le prof vérifie)</h2>
+      <ul class="checklist">
+        <li>Le site est en ligne (URL GitHub Pages) et fonctionne.</li>
+        <li>Rubriques complètes et rangées clairement.</li>
+        <li>Code rédigé à la main (pas de CMS).</li>
+        <li>Commits réguliers (Git) avec messages clairs.</li>
+        <li>Projet final CRM documenté + diaporama.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> [Ton Nom] — Portfolio MIAGE</span>
+      <span class="muted">Hébergé sur GitHub Pages</span>
+    </div>
+  </footer>
+</body>
+</html>

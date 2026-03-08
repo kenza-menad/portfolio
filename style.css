@@ -203,3 +203,63 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+/* Layout accueil : sidebar à gauche + contenu */
+.home .home-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Sidebar */
+.home .home-sidebar {
+  margin-bottom: 0; /* éviter l'espace en bas */
+}
+
+.home .home-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.home .home-name {
+  margin: 0;
+  text-align: center;
+}
+
+.home .home-contact {
+  margin-top: 12px;
+}
+
+/* IMPORTANT : ta grille de 4 cartes reste dans home-main */
+.home .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.home .grid .card {
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .home .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .home .home-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .home .grid {
+    grid-template-columns: 1fr;
+  }
+}
